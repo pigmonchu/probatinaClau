@@ -1,7 +1,5 @@
-from flask import Flask
-
-app = Flask(__name__)
+from tareas import app
 
 @app.route("/")
 def index():
-    return "Flask rulando"
+    return "Flask rulando desde __init__"
